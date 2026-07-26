@@ -1,12 +1,18 @@
+import os
+
 import joblib
 import pandas as pd
 import streamlit as st
 
 from src.config import MODEL_FILE, PIPELINE_FILE
+from src.modeling import train_and_evaluate
 
 
 @st.cache_resource
 def load_model_and_pipeline():
+    if not os.path.exists(MODEL_FILE) or not os.path.exists(PIPELINE_FILE):
+        train_and_evaluate()
+
     model = joblib.load(MODEL_FILE)
     pipeline = joblib.load(PIPELINE_FILE)
     return model, pipeline
