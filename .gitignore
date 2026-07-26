@@ -1,0 +1,31 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Project artifacts
+model.pkl
+pipeline.pkl
+input.csv
+predictions.csv
+metrics.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/

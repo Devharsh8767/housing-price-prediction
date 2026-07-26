@@ -1,0 +1,6 @@
+MODEL_FILE = "model.pkl"
+PIPELINE_FILE = "pipeline.pkl"
+DATA_FILE = "housing.csv"
+INPUT_FILE = "input.csv"
+PREDICTIONS_FILE = "predictions.csv"
+METRICS_FILE = "metrics.json"
